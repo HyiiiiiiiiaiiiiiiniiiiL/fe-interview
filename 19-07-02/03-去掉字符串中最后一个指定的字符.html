@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function delLast(str, del) {
+        if (typeof str !== "string") {
+            return false;
+        } else {
+            let index = str.lastIndexOf(del)
+            return str.substring(0, index) + str.substring(index + 1, str.length)
+        }
+    }
+    let str = delLast("abbbbcccd", "d")
+    console.log(str)
+</script>
+
+</html>
